@@ -1,11 +1,12 @@
 version: "3"
 
 services:
-  test:
+  duck-book:
     build: .
-    container_name: test-container
+    container_name: duck-book-container
     ports:
-      - 8080:8080
+      - "8080:8080"
     volumes:
-      - .:/workspace
+      - ".:/workspace"
+    tty: true
 
