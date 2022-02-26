@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  test:
+    build: .
+    container_name: test-container
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/workspace
+
