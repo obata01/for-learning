@@ -1,7 +1,28 @@
-# 学習用リポジトリ
+# StanとRでベイズ統計モデリング（アヒル本）
 
-## 学習内容一覧
-1. データ解析のための統計モデリング入門（緑本）
+## 環境構築
 
-2. StanとＲでベイズ統計モデリング（アヒル本）
+### クローン＆コンテナ起動
+```
+$ git clone -b duck-book git@github.com:obata01/for-learning.git duck-book
+$ cd duck-book
+$ docker-compose up
+```
+
+### VSCodeからコンテナへアタッチ
+
+- Remote - Containers  の拡張機能をインストール<br>
+  → duck-bookコンテナへアタッチ
+
+### VSCodeへR拡張機能をインストール
+下記拡張機能をインストール
+
+1. R
+2. R Tools
+
+### Rstanのインストール
+```
+$ R
+> install.packages('rstan', dependencies=TRUE)
+```
 

@@ -1,3 +1,9 @@
+pymc3
+pystan
+pystan-jupyter
+arviz
+pyper
+plotnine
 numpy
 scikit-learn
 matplotlib
