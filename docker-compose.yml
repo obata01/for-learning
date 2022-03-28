@@ -5,7 +5,7 @@ services:
     build: .
     container_name: duck-book-container
     ports:
-      - "8080:8080"
+      - "8989:8989"
     volumes:
       - ".:/workspace"
     tty: true

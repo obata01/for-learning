@@ -14,5 +14,4 @@ RUN apt-key adv --keyserver hkps://keyserver.ubuntu.com:443 \
 RUN apt-get install -y r-base r-base-dev
 
 # 環境変数設定
-ENV PYTHONPATH /workspace/src
-
+ENV PYTHONPATH /workspace
