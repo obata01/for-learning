@@ -11,3 +11,4 @@ japanize-matplotlib
 seaborn
 mypy
 flake8
+statsmodels
