@@ -2,7 +2,9 @@ version: "3"
 
 services:
   pytorch:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.GPU
     container_name: pytorch-container
     ports:
       - 8070:8070

@@ -1,7 +1,14 @@
-# 学習用リポジトリ
+# PyTorch実践入門
 
-## 学習内容一覧
-1. データ解析のための統計モデリング入門（緑本）
+## 環境構築
 
-2. StanとＲでベイズ統計モデリング（アヒル本）
+■CPUの場合
+```
+docker-compose up -d
+```
+
+■GPUの場合
+```
+docker-compose -f docker-compose-gpu.yml up -d
+```
 
