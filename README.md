@@ -1,14 +1,44 @@
-# PyTorch実践入門
+# GCP VertexAI WorkBenchでの学習環境構築
 
-## 環境構築
 
-■CPUの場合
+## GCPアカウントの用意
+1. gmailアカウントを新規作成
+
+e.g.) gcp01.xxxxxx@gmail.com
+
+2. GCPへログイン
+https://console.cloud.google.com/welcome
+
+3. 新規project作成
+
+4. 無料トライアルを始める
+
+5. vertex ai workbench を有効にして利用を始める
+https://cloud.google.com/vertex-ai-workbench?hl=ja
+
+
+## GitHubとGCPの紐付け
+
+comming soon...
+
+
+## VertexAI WorkBenchを始める
+
+1. cloud storageのバケットを作成する
+
+2. 新しいノートブックを作成する
+
+3. JupyterLabを開く
+
+4. git clone...
+
+5. ライブラリインストール
+
 ```
-docker-compose up -d
+pip install -r requirement.txt
 ```
 
-■GPUの場合
-```
-docker-compose -f docker-compose-gpu.yml up -d
-```
+6. 必要に応じてgit push
+
+
 
