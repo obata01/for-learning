@@ -51,6 +51,7 @@ cat ~/.ssh/id_rsa.pub
 
 ```
 git clone -b pytorch git@github.com:obata01/for-learning.git luna
+cd luna
 ```
 
 5. ライブラリインストール
@@ -62,7 +63,8 @@ pip install -r requirement.txt
 6. 必要なデータのダウンロード
 
 ```
-wget -P ./luna/data -i luna_file_path.txt
+export LUNA_HOME="/home/jupyter/luna"
+wget -P ${LUNA_HOME}/data -i luna_file_path.txt
 ```
 
 7. 必要に応じてgit push
@@ -71,5 +73,4 @@ wget -P ./luna/data -i luna_file_path.txt
 GCPの無料アカウントではGPUを利用できないため有料アカウントに移行する必要がある。
 
 https://cloud.google.com/free/docs/free-cloud-features?hl=ja#how-to-upgrade
-
 
