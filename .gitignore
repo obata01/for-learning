@@ -1,4 +1,5 @@
 .rstudio/
 .bash_history
 .config/R/
-.data/*
+data/*
+.ipynb_checkpoints/
