@@ -17,6 +17,6 @@ COPY ./src/ ${APP_DIR}/src/
 RUN export PYTHONPATH=/app
 
 # Jupyter Lab
-RUN jupyter notebook --generate-config && \
+RUN jupyter lab --generate-config && \
     sed -i -e "s/# c.NotebookApp.ip = 'localhost'/c.NotebookApp.ip = '0.0.0.0'/g" ~/.jupyter/jupyter_notebook_config.py && \
     sed -i -e 's/# c.NotebookApp.allow_root = False/c.NotebookApp.allow_root = True/g' ~/.jupyter/jupyter_notebook_config.py
