@@ -7,6 +7,7 @@ WORKDIR ${APP_DIR}
 COPY requirements.txt ${APP_DIR}
 
 RUN apt-get update && \
+    apt-get install -y tzdata && \
     apt-get install -y nodejs npm && \
     pip3 install --no-cache-dir -r requirements.txt
 
