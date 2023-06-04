@@ -39,7 +39,15 @@ cat ~/.ssh/id_rsa.pub
 docker-compose up -d
 ```
 
-6. jupyter起動
+6. Dockerコンテナへ入る
+
+```
+docker exec -it pytorch-container bash
+```
+
+7. jupyter起動
+
+コンテナ内で下記を実行
 ```
 jupyter lab --allow_root --ip="0.0.0.0"
 ```
@@ -49,12 +57,13 @@ http://[ec2のホスト]:8888  へアクセス
 ※アクセスできない場合はセキュリティーグループを確認
 
 
-7. 必要なデータのダウンロード
+8. 必要なデータのダウンロード
 
 ```
 wget -P ${APP_DIR}/data -i luna_file_path.txt
 ```
-※環境変数APP_DIRはDockerfile内で定義している。
+※環境変数APP_DIRはDockerfile内で定義している。  
+※なぜかコンテナの外で上記を実行したらエラーになったためコンテナ内で実行する。
 
 
 # GCP VertexAI WorkBenchでの学習環境構築
