@@ -51,17 +51,13 @@ http://[ec2のホスト]:8888  へアクセス
 
 7. 必要なデータのダウンロード
 
-※Dockerfile等を修正した場合はそれに合わせて下記LUNA_HOMEのパスも変更すること。
-
 ```
-export LUNA_HOME="/app/data"
-wget -P ${LUNA_HOME}/data -i luna_file_path.txt
+wget -P ${APP_DIR}/data -i luna_file_path.txt
 ```
-
+※環境変数APP_DIRはDockerfile内で定義している。
 
 
 # GCP VertexAI WorkBenchでの学習環境構築
-
 
 ## GCPアカウントの用意
 1. gmailアカウントを新規作成
