@@ -1,3 +1,54 @@
+# AWSでの環境構築手順
+
+1. AMIからインスタンスを起動
+    - リージョンを「バージニア北部」等へ変更
+    - AMIカタログ画面で「GPU」で検索して任意のAMIを選択
+    - 「AMIでインスタンスを起動」を押下
+    - パブリックIPを許可
+    - us-east1-[a~d]のVPCサブネットを利用
+    - ストレージを300G選択
+    - 作成する
+
+2. SSH接続
+
+EC2インスタンスの画面の右上の「接続＞SSHクライアント」からSSHコマンド取得しログイン
+
+3. Docker install
+
+以下でDockerをインストールする。
+
+- [Dockerのリポジトリを設定する](https://sid-fm.com/support/vm/guide/install-docker-ubuntu.html#repository)
+- [Docker をインストールする](https://sid-fm.com/support/vm/guide/install-docker-ubuntu.html#install)
+
+4. GitHub設定
+
+- ssh-keyの生成
+```
+ssh-keygen -t rsa
+```
+
+- GitHubへ公開鍵を登録
+下記公開鍵をGitHubの自分のアカウントへ設定する
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+5. 環境構築
+
+```
+docker-compose up -d
+```
+
+6. jupyter起動
+```
+jupyter lab --allow_root --ip="0.0.0.0"
+```
+
+http://[ec2のホスト]:8888  へアクセス  
+例）http://ec2-35-153-133-218.compute-1.amazonaws.com:8888/lab/tree/notebooks  
+※アクセスできない場合はセキュリティーグループを確認
+
+
 # GCP VertexAI WorkBenchでの学習環境構築
 
 
