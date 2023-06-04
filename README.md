@@ -49,6 +49,17 @@ http://[ec2のホスト]:8888  へアクセス
 ※アクセスできない場合はセキュリティーグループを確認
 
 
+7. 必要なデータのダウンロード
+
+※Dockerfile等を修正した場合はそれに合わせて下記LUNA_HOMEのパスも変更すること。
+
+```
+export LUNA_HOME="/app/data"
+wget -P ${LUNA_HOME}/data -i luna_file_path.txt
+```
+
+
+
 # GCP VertexAI WorkBenchでの学習環境構築
 
 
