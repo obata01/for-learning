@@ -3,3 +3,9 @@
 .config/R/
 data/*
 .ipynb_checkpoints/
+*.pkl
+*.pickle
+*.de
+*.gz
+*.en
+**/__pycache__/

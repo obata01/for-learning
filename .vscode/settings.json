@@ -1,0 +1,38 @@
+{
+    "python.linting.flake8Enabled": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "gitlens.defaultDateFormat": null,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "remote.SSH.remotePlatform": {
+        "remote-dev": "linux",
+        "local-pc-windows": "linux"
+    },
+    "git.ignoreMissingGitWarning": true,
+    "python.linting.mypyEnabled": true,
+    "codic.ACCESS_TOKEN": "ZqSQlbC4jAh5b4F0EStAbBa74NQbo3E2ue",
+    "codic.case": "snake_case",
+    "tabnine.experimentalAutoImports": true,
+    "python.linting.flake8Args": [
+        "--max-line-length",
+        "120"
+    ],
+    "workbench.colorTheme": "Visual Studio Dark",
+    "python.linting.pylintArgs": [
+        "--rcfile=\"/app/.pylintrc\""
+    ],
+    "python.linting.pylintEnabled": true,
+    "sourcery.token": "",
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "notebook.lineNumbers": "on",
+    "python.analysis.autoImportCompletions": false,
+    "[python]": {
+        "editor.formatOnType": true
+    }
+}

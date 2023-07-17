@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "fnando.linter",
+        "ms-toolsai.jupyter",
+        "graykode.ai-docstring",
+        "streetsidesoftware.code-spell-checker",
+        "mhutchie.git-graph"
+    ]
+}

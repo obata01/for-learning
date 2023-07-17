@@ -1,12 +1,14 @@
 version: "3"
 
 services:
-  pytorch:
+  pytorch-models:
     build: .
-    container_name: pytorch-container
+    container_name: pytorch-models
     ports:
-      - 8888:8888
+      - 8889:8889
     volumes:
       - .:/app
+    environment:
+      - PYTHONPATH=/app
     tty: true
     restart: always

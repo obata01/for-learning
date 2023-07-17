@@ -2,3 +2,6 @@ numpy
 scikit-learn
 matplotlib
 jupyterlab
+spacy
+pylint
+flake8

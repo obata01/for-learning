@@ -1,0 +1,6 @@
+data:
+  input_dir: /app/seq2seq/data/inputs
+  output_dir: /app/seq2seq/data/outputs
+train:
+  batch_size: 128
+   
